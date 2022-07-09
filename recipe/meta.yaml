@@ -1,5 +1,5 @@
 {% set name = "physiocurve" %}
-{% set version = "2022.6.26" %}
+{% set version = "2022.7.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 27ae9321b85a2e0c279145b96abe759c8577e1dedcbd1e204801c09d9f923d94
+  sha256: 24bc9f6a5ddbc52b9b776d0b52d44d465d54e0eca970dde6a9a67dc3c711b09d
 
 build:
   noarch: python
@@ -38,7 +38,7 @@ test:
 
 about:
   home: https://framagit.org/jaj/physiocurve
-  summary: 'Library to analyze biometric time series for Python'
+  summary: Library to analyze biometric time series for Python
   description: |
     physiocurve is a library to analyze biometric time series such as ECG and
     pulse waves, often obtained from patient monitors.

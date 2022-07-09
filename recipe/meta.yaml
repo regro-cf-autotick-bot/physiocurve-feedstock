@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -24,7 +24,6 @@ requirements:
     - python >=3.8,<3.11
     - pandas =1.4
     - numba =0.55.2
-    - scipy =1.8.1
     - neurokit2 =0.2.0
 
 test:

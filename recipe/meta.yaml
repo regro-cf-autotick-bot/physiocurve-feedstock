@@ -1,5 +1,5 @@
 {% set name = "physiocurve" %}
-{% set version = "2022.7.8" %}
+{% set version = "2022.7.14" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 24bc9f6a5ddbc52b9b776d0b52d44d465d54e0eca970dde6a9a67dc3c711b09d
+  sha256: df298ebcd8d75e001727b36a1e777ea8ee6a3c9592cacb2923d721fbbef0f5cc
 
 build:
   noarch: python

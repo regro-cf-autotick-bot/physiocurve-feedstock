@@ -1,5 +1,5 @@
 {% set name = "physiocurve" %}
-{% set version = "2024.5.7" %}
+{% set version = "2024.9.24" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f3d048aa92f711c2a60569e43345b2eb72900c949f26ede525d926eb06dd3f16
+  sha256: 99b8a21c0b16c9fb5c5d173e0c824fa5a612873f240f5b777dff054953582ad6
 
 build:
   noarch: python
@@ -20,10 +20,10 @@ requirements:
     - python >=3.9,<3.13
     - pip
     - poetry >=0.12
+    - setuptools
   run:
     - python >=3.9,<3.13
-    - pandas >=2.0
-    - numba >=0.59.1,<0.60
+    - pandas >=2,<3
     - neurokit2 >=0.2.7,<0.3
 
 test:

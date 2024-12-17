@@ -1,13 +1,13 @@
 {% set name = "physiocurve" %}
-{% set version = "2024.9.24" %}
+{% set version = "2024.12.16" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 99b8a21c0b16c9fb5c5d173e0c824fa5a612873f240f5b777dff054953582ad6
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: ef614e7163d7b5a7df17c31f6a7063e0c906ef5453f80367d7c73abddaae534e
 
 build:
   noarch: python
